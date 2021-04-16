@@ -223,7 +223,7 @@ header {
 }
 
 .service_right a {
-    color: #ffffff;
+    color: #fcfaf1;
     background-color: #9fb2ac;
     border-radius: 100px;
     -moz-border-radius: 100px;
@@ -241,6 +241,17 @@ header {
     transition: 1s;
 }
 
+.rev {
+    flex-direction: row-reverse;
+}
+
+.rev_left {
+    margin-left: 40px;
+}
+
+.rev_right {
+    margin-left: 0%;
+}
 
 @media (max-width: 1024px) {
     .header_logo {
@@ -362,6 +373,10 @@ header {
         font-size: 30px;
         font-weight: 400;
         text-align: center;
+    }
+
+    .rev_left {
+        margin-left: 0px;
     }
 }
 
