@@ -166,6 +166,81 @@ header {
     font-size: 45px;
 }
 
+.my_services {
+    grid-column: 1/5;
+}
+
+.my_services_head {
+    color: #fcfaf1;
+    grid-column: 1/5;
+    background-color: #9fb2ac;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_services_head_back_text {
+    font-size: 75px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.service {
+    background-color: #fcfaf1;
+}
+
+.service_box {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.service_left img {
+    height: 400px;
+}
+
+.service_right {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service_right_head {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.service_right ul {
+    list-style-type: none;
+    font-size: 18px;
+    color: #58514e;
+}
+
+.service_right h2 {
+    text-align: center;
+    color: #f7906a;
+}
+
+.service_right a {
+    color: #ffffff;
+    background-color: #9fb2ac;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    padding: 15px 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.service_right a:hover {
+    background-color: #505e5e;
+    box-shadow: 0px 5px 8px 0 rgb(0 0 0 / 40%);
+    transition: 1s;
+}
+
 
 @media (max-width: 1024px) {
     .header_logo {
@@ -212,6 +287,10 @@ header {
     
     .about_smm_text_box .icons_text {
         font-size: 25px;
+    }
+
+    .my_services_head_back_text {
+        font-size: 55px;
     }
 }
 
@@ -260,6 +339,29 @@ header {
     .about_smm_text_box .icons_text {
         font-size: 20px;
     }
+
+    .my_services_head_back_text {
+        font-size: 35px;
+    }
     
+    .service_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .service_right {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service_right_head {
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
 }
 
