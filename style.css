@@ -37,7 +37,7 @@
 header {
     display: grid;
     grid-template-columns:repeat(4, 1fr);
-    grid-template-rows: repeat(2, 100vh) repeat(1, 50vh) repeat(1, 100vh);
+    grid-template-rows: repeat(1, 100vh) repeat(1, 100vh) repeat(1, 50vh);
 
 }
 
@@ -46,7 +46,7 @@ header {
     background-image: url(img/header_logo_two.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center center;
+    background-position:0% 85%;
     background-attachment: fixed;
     vertical-align: middle;
     position: relative;
@@ -73,7 +73,7 @@ header {
 .header_logo_text_block .text_bot {
     margin-top: 8vh;
     font-size: calc(1.5rem + 3vw);
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
 
 .header_logo_text_block .text_bot_bot {
@@ -84,16 +84,17 @@ header {
 .about_me {
     height: 100vh;
     grid-column: 1/5;
-    background-color: #fcfaf1;
+    background-color: #f8f4eb;
     display: flex;
     align-items: center;
     text-align: center;
 }
 
 .about_me_box p {
+    color: hsl(185deg 89% 18%);
     border: 1px solid;
     padding: 20px;
-    font-size: calc(1rem + 2vw);
+    font-size: calc(10px + 1vw);
     margin: 32px;
 }
 
@@ -134,7 +135,7 @@ header {
 
 .about_smm_text {
     grid-column: 1/5;
-    background-color: #fcfaf1;
+    background-color: #f8f4eb;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -146,24 +147,25 @@ header {
     display: flex;
     padding: 15px;
     text-align: start;
-    color: #58514e;
+    color: hsl(185deg 89% 18%);
     align-items: center;
+    /* width: 1000px; */
 }
 
 .about_smm_text_box:hover {
-    color: #fa0000;
-    transition: 1s;
-    transform: scale(1.1);
+    color: #e4b868;
+    transition: 0.3s;
+    transform: scale(1.05);
 }
 
 .about_smm_text_box .icons {
-    font-size: 50px;
+    font-size: 30px;
     padding-right: 20px;
     align-self: center;
 }
 
 .about_smm_text_box .icons_text {
-    font-size: 45px;
+    font-size: 25px;
 }
 
 .my_services {
@@ -173,7 +175,7 @@ header {
 .my_services_head {
     color: #fcfaf1;
     grid-column: 1/5;
-    background-color: #9fb2ac;
+    background-color: #b0af90;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -187,7 +189,7 @@ header {
 }
 
 .service {
-    background-color: #fcfaf1;
+    background-color: #f8f4eb;
 }
 
 .service_box {
@@ -207,6 +209,7 @@ header {
 }
 
 .service_right_head {
+    text-align: center;
     font-size: 30px;
     font-weight: 400;
 }
@@ -217,14 +220,24 @@ header {
     color: #58514e;
 }
 
+.service_right .list_circle {
+    list-style-type: circle;
+    font-size: 18px;
+    color: #58514e;
+}
+
+.service_right .other_serv li span {
+    color: #f7906a;
+}
+
 .service_right h2 {
     text-align: center;
     color: #f7906a;
 }
 
 .service_right a {
-    color: #fcfaf1;
-    background-color: #9fb2ac;
+    color: #575139;
+    background-color: #b0af90;
     border-radius: 100px;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
@@ -236,9 +249,10 @@ header {
 }
 
 .service_right a:hover {
-    background-color: #505e5e;
+    background-color: #575139;
     box-shadow: 0px 5px 8px 0 rgb(0 0 0 / 40%);
-    transition: 1s;
+    transition: 0.3s;
+    color: #f8f4eb;
 }
 
 .rev {
@@ -253,9 +267,34 @@ header {
     margin-left: 0%;
 }
 
+.my_works {
+    grid-column: 1/5;
+    background-color: #f8f4eb;
+}
+
+.my_works_box {
+    display: flex;
+}
 @media (max-width: 1024px) {
     .header_logo {
         background-attachment:unset;
+    }
+
+    .header_logo_text_block .text_bot {
+        margin-top: 8vh;
+        font-size: calc(1.5rem + 3vw);
+        margin-bottom: 3vh;
+    }
+
+    .header_logo_text_block .text_bot_bot {
+        font-size: calc(0.8rem + 0.5vw);
+        padding: 20px;
+    }
+    .about_me_box p {
+        border: 1px solid;
+        padding: 20px;
+        font-size: calc(15px + 0.5vh);
+        margin: 32px;
     }
     .about_smm {
         background-attachment:unset;
@@ -264,7 +303,7 @@ header {
 
     .about_smm_box {
         width: 700px;
-        font-size: 64px;
+        font-size: 54px;
     }
 
     .about_smm_box span {
@@ -273,7 +312,6 @@ header {
 
     .about_smm_text {
         grid-column: 1/5;
-        background-color: #fcfaf1;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -284,24 +322,26 @@ header {
     .about_smm_text_box {
         display: flex;
         padding: 10px;
-        width: 250px;
+        width: 500px;
         text-align: start;
-        color: #58514e;
         align-items: center;
     }
     
     .about_smm_text_box .icons {
         font-size: 45px;
-        padding-right: 20px;
+        padding-right: 10px;
         align-self: center;
     }
     
     .about_smm_text_box .icons_text {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .my_services_head_back_text {
         font-size: 55px;
+    }
+    .my_works_box {
+        display: unset;
     }
 }
 
@@ -309,13 +349,26 @@ header {
     .header_logo {
         background-attachment:unset;
     }
+
+    .header_logo_text_block .text_bot {
+        margin-top: 8vh;
+        font-size: calc(1.5rem + 3vw);
+        margin-bottom: 8vh;
+    }
+    .about_me_box p {
+        border: 1px solid;
+        padding: 20px;
+        font-size: calc(15px + 0.5vh);
+        margin: 32px;
+    }
+
     .about_smm {
         background-attachment:unset;
     }
     .about_smm_box {
-        margin-top: 70px;
+        margin-top: 100px;
         width: auto;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .about_smm_box span {
@@ -324,7 +377,6 @@ header {
 
     .about_smm_text {
         grid-column: 1/5;
-        background-color: #fcfaf1;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -335,9 +387,8 @@ header {
     .about_smm_text_box {
         display: flex;
         padding: 15px 15px 15px 0px;
-        width: 200px;
+        width: 300px;
         text-align: start;
-        color: #58514e;
         align-items: center;
     }
     
@@ -377,6 +428,10 @@ header {
 
     .rev_left {
         margin-left: 0px;
+    }
+
+    .my_works_box {
+        display: unset;
     }
 }
 
