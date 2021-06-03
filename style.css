@@ -198,8 +198,7 @@ header {
 
 .service_att {
     text-align: center;
-    color: red;
-    padding: 10px;
+    color: #f79d6a;
 }
 
 .service_box {
@@ -222,12 +221,17 @@ header {
     text-align: center;
     font-size: 30px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .service_right ul {
     list-style-type: none;
     font-size: 18px;
     color: #58514e;
+}
+
+.service_up_li {
+    margin-bottom: 10px;
 }
 
 .service_right .list_circle {
@@ -252,7 +256,6 @@ header {
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border: 1px solid transparent;
-    margin-top: 20px;
     padding: 15px 12px;
     text-decoration: none;
     text-align: center;
@@ -284,6 +287,48 @@ header {
 
 .my_works_box {
     display: flex;
+}
+
+.my_works_link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.my_works_link_disk {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.link_button {
+    max-width: 600px;
+}
+
+.my_works_link a{
+    color: #575139;
+    background-color: #b0af90;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid transparent;
+    padding: 15px 12px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.my_works_link p {
+    margin-bottom: 30px;
+}
+
+.my_works_link a:hover{
+    background-color: #575139;
+    box-shadow: 0px 5px 8px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+    color: #f8f4eb;
 }
 
 .reviews {
