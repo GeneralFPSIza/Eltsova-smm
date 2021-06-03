@@ -95,7 +95,7 @@ header {
 }
 
 .about_me_box p {
-    color: hsl(185deg 89% 18%);
+    color: #58514e;
     border: 1px solid;
     padding: 20px;
     font-size: calc(10px + 1vw);
@@ -151,7 +151,7 @@ header {
     display: flex;
     padding: 15px;
     text-align: start;
-    color: hsl(185deg 89% 18%);
+    color: #58514e;
     align-items: center;
     /* width: 1000px; */
 }
@@ -218,6 +218,7 @@ header {
 }
 
 .service_right_head {
+    color: #58514e;
     text-align: center;
     font-size: 30px;
     font-weight: 400;
@@ -238,6 +239,10 @@ header {
     list-style-type: circle;
     font-size: 18px;
     color: #58514e;
+}
+
+.list_circle_inside {
+    font-size: 18px;
 }
 
 .service_right .other_serv li span {
@@ -321,6 +326,7 @@ header {
 }
 
 .my_works_link p {
+    color: #58514e;
     margin-bottom: 30px;
 }
 
@@ -453,7 +459,7 @@ header {
     .about_me_box p {
         border: 1px solid;
         padding: 20px;
-        font-size: calc(15px + 0.5vh);
+        font-size: calc(13px + 0.5vh);
         margin: 32px;
     }
 
@@ -461,7 +467,7 @@ header {
         background-attachment:unset;
     }
     .about_smm_box {
-        margin-top: 100px;
+        margin-top: 80px;
         width: auto;
         font-size: 35px;
     }
@@ -494,7 +500,7 @@ header {
     }
     
     .about_smm_text_box .icons_text {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .my_services_head_back_text {
@@ -526,6 +532,14 @@ header {
     }
 
     .service_right .list_circle {
+        font-size: 12px;
+    }
+
+    .list_circle_inside li {
+        font-size: 12px;
+    }
+
+    .other_serv {
         font-size: 10px;
     }
 
